@@ -1,0 +1,200 @@
+#nbaList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#nbaList .match-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+}
+
+#nbaList .match-date,
+#nbaList .team,
+#nbaList .vs,
+#nbaList .match-time {
+    margin: 0 5px;
+}
+
+#nbaList .match-date { 
+    color: #666;
+    font-size: 0.9em;
+    flex-basis: 100%;
+    margin-bottom: 5px;
+}
+
+#nbaList .home-team { text-align: right; }
+#nbaList .away-team { text-align: left; }
+
+#nbaList .vs {
+    font-weight: bold;
+    color: #888;
+}
+
+#nbaList .match-time { 
+    color: #04aa6d;
+    font-size: 0.9em;
+}
+
+#nbaList .no-games,
+#nbaList .error-message {
+    padding: 10px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#nbaList .error-message {
+    color: #ff0000;
+}
+
+#footballList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: white; 
+}
+
+#footballList .match-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+}
+
+#footballList .match-date,
+#footballList .team,
+#footballList .vs,
+#footballList .match-time,
+#footballList .league-name {
+    margin: 0 5px;
+}
+
+#footballList .match-date { 
+    color: #666;
+    font-size: 0.9em;
+    flex-basis: 100%;
+    margin-bottom: 5px;
+}
+
+#footballList .home-team { text-align: right; }
+#footballList .away-team { text-align: left; }
+
+#footballList .vs {
+    font-weight: bold;
+    color: #888;
+}
+
+#footballList .match-time { 
+    color: #04aa6d;
+    font-size: 0.9em;
+}
+
+#footballList .league-name {
+    font-size: 0.8em;
+    color: #888;
+    flex-basis: 100%;
+    text-align: right;
+    margin-top: 5px;
+}
+
+#footballList .no-games,
+#footballList .error-message {
+    padding: 10px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#footballList .error-message {
+    color: #ff0000;
+}
+
+#cricketList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#cricketList .match-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+}
+
+#cricketList .match-date,
+#cricketList .team,
+#cricketList .vs,
+#cricketList .match-time,
+#cricketList .match-type {
+    margin: 0 5px;
+}
+
+#cricketList .match-date { 
+    color: #666;
+    font-size: 0.9em;
+    flex-basis: 100%;
+    margin-bottom: 5px;
+}
+
+#cricketList .home-team { text-align: right; }
+#cricketList .away-team { text-align: left; }
+
+#cricketList .vs {
+    font-weight: bold;
+    color: #888;
+}
+
+#cricketList .match-time { 
+    color: #04aa6d;
+    font-size: 0.9em;
+}
+
+#cricketList .match-type {
+    font-size: 0.8em;
+    color: #888;
+    flex-basis: 100%;
+    text-align: right;
+    margin-top: 5px;
+}
+
+#cricketList .no-games,
+#cricketList .error-message {
+    padding: 10px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#cricketList .error-message {
+    color: #ff0000;
+}

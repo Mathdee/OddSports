@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="page1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html" class="logo"></a><img src="logo.png"></a>
+        <a href="odds.html">GAME ODDS</a>
+        <a href="games.html">UPCOMING GAMES</a>
+        <a href="info.html" >ABOUT</a>
+    </div>
+
+    <div class="league-selector">
+        <button class="dropdown-btn">Select League</button>
+        <div class="dropdown-content">
+            <a href="#" data-league="premier-league">Premier League</a>
+            <a href="#" data-league="la-liga">La Liga</a>
+            <a href="#" data-league="bundesliga">Bundesliga</a>
+            <a href="#" data-league="eredivisie">Eredivisie</a>
+            <a href="#" data-league="nba">NBA</a>
+            <a href="#" data-league="IPL">IPL <i>(working on it)</i></a>
+        </div>
+    </div>
+     
+    <div class="pick">
+        <!-- Teams will be filled in through J.S -->
+    </div>
+    
+    <div class="team_choice">
+        <div id="left" class="dropzone"></div>
+        <div id="right" class="dropzone"></div>
+    </div>
+
+    <div id="odds-result" class="odds-result">
+        <!--Odds will be filled in through J.S-->
+    </div>
+
+    <script src="script.js"></script>
+    <script src="oddcode.js"></script>
+    <script src="prediction.js"></script>
+</body>
+<footer></footer>
+</html>

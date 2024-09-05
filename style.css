@@ -1,0 +1,412 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tahoma";
+    background-color: #f5f0e8;
+  }
+
+.topnav{
+    background-color: #737372;
+    overflow: hidden;
+  
+}
+
+
+
+
+
+
+
+.topnav img{
+    text-align: center;
+    width: 190px;
+    height: 50px;
+    margin: 14px 20px 5px 7px;
+    
+}
+
+.topnav a{
+    bottom: 30%;
+    background-color: #737372;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 30px 40px 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover{
+    color: rgb(19, 199, 73);
+    background: #f5f0e8;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.topnav a.active {
+    background-color: #04aa6d;
+    color: white;
+}
+    
+
+.About h1{
+    margin-bottom: 20px;
+}
+.About {
+    padding-bottom: 10px;
+    padding: 100px 20%;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+
+
+.wrapper {
+    background-color: white; 
+    padding: 40px 20%; 
+    margin-top: 20px; 
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.wrapper .fa {
+    position: relative;
+    padding: 18px 5px;
+    margin-top: 15px;
+    font-size: 15px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.wrapper .bx {
+    position: relative;
+    padding: 18px 5px;
+    margin-top: 15px;
+    font-size: 15px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.wrapper .fa:hover{
+    opacity: 0.7;
+}
+.wrapper .bx:hover{
+    opacity: 0.7;
+}
+
+.wrapper .fa-linkedin{
+    background: #55acee;
+    color: white;
+}
+.wrapper .bxs-window-alt{
+    background: #e67a27;
+    color: white;
+}
+.wrapper .fa-github{
+    background: #212121;
+    color: white;
+}
+
+
+.games h1{
+    margin-top: -20px;
+}
+.games {
+    padding-bottom: 10px;
+    padding: 100px 20%;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+
+
+.live {
+    background-color: white; 
+    border-radius: 5px;
+    margin-right: 80%;
+}
+
+.container {
+    max-width: 80%;
+    margin-left: 65px;
+    border: 2px solid #fffefe;
+    border-radius: 5px;
+    overflow-y: visible;
+    margin-top: -80px;
+    background-color: #eee;
+    padding-bottom: 20px;
+    max-height: 65vh;
+    overflow-y: auto;
+}
+
+.container .item {
+    color: #1a1919;
+    position: relative;
+    min-width: 110px;
+    background-color: #00bf63;
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 10px;
+    font-weight: bold;
+    overflow: visible;
+}
+
+.container .item::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+}
+
+.container .item ul {
+    padding: 0;
+    text-align: left;
+    list-style-type: none;
+}
+
+#footballList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+
+.container .item ul li {
+    margin-bottom: 5px;
+    font-weight: 300;
+    padding-bottom: 3px;
+    text-decoration: none; 
+}
+
+.container .item p{
+    margin-top: -10px;
+    margin-bottom: 9px;
+    background-color: transparent;
+    
+}
+
+.dropdown-btn {
+    background-color: #00bf63;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 15px;
+}
+
+.dropdown-btn:hover {
+    background-color: #04aa6d;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 0;
+    margin-top: -10px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+
+.pick {
+    max-width: 700px;
+    max-height: 120px;
+    border: 1px solid #ddd;
+    margin: auto;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 5px;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #ddd;
+}
+
+.pick::-webkit-scrollbar{
+    width: 10px;
+}
+
+.pick .team {
+    flex: 0 0 auto;
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    background-color: #ddd;
+    margin-right: 5px;
+    cursor: move;
+}
+
+.team_choice {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+#left,
+#right {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 2px dashed #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    position: relative;
+}
+
+.dropzone {
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 180px;
+}
+
+#left:hover,
+#right:hover {
+    background-color: #04aa6d;
+}
+
+#footballList li {
+    background-color: transparent;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    background-color: white;
+}
+
+.footballMatch, .footballScore {
+    display: block;
+    background-color: transparent;
+    background-color: white;
+}
+
+.footballScore {
+    font-weight: bold;
+    margin-left: 20%;
+}
+
+.match-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.home-team {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.away-team {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.team-logo {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+.score {
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 20%;
+    text-align: center;
+}
+
+#nbaList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.match-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.home-team {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.away-team {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.team-logo {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+.score {
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 20%;
+    text-align: center;
+}
+
+.game-status {
+    font-size: 0.8em;
+    color: #666;
+}
+
+
+.nolive {
+    padding: 10px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px 0;
+    display: block;
+}
+
+.odds-result {
+    margin-top: 20px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+}

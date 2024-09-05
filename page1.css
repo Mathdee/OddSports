@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tahoma";
+    background-color: #f5f0e8;
+}
+
+/* League Selector Dropdown */
+.league-selector {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.dropdown-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #f9f9f9;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+/* Team Pick Area */
+.pick {
+    max-width: 700px;
+    height: 120px;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 5px;
+    background-color: #f9f9f9;
+}
+
+.pick .team {
+    flex: 0 0 auto;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #e0e0e0;
+    margin-right: 5px;
+    cursor: move;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 14px; /* Start with a base font size */
+    line-height: 1.2;
+    word-break: break-word;
+}
+
+/* Font size adjustments for longer text */
+.pick .team[data-length="medium"] {
+    font-size: 12px;
+}
+
+.pick .team[data-length="long"] {
+    font-size: 10px;
+}
+
+.pick .team[data-length="very-long"] {
+    font-size: 9px;
+}
+
+/* Team Choice Dropzones */
+.team_choice {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#left,
+#right {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 2px dashed #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.dropzone {
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 180px;
+}
+
+#left:hover,
+#right:hover {
+    background-color: #e0e0e0;
+}
+
+.container .item .nolive{
+    padding: 10px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
